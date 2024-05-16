@@ -21,7 +21,6 @@ public class HitListener implements Listener {
             Wither wither = (Wither) event.getEntity();
             Player player = (Player) event.getDamager();
 
-            // Check if the wither's custom name matches "Mega Wither"
             if (wither.getCustomName() != null && wither.getCustomName().equals(ChatColor.RED + "Mega Wither")) {
                 hitTracker.logWitherHit(player);
             }
