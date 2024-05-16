@@ -20,7 +20,7 @@ public final class MegaWither extends JavaPlugin {
 
         handler.register(new HitsCommand(hitTracker));
 
-        // Register HitListener with the HitTracker instance
+
         Bukkit.getPluginManager().registerEvents(hitListener, this);
 
         this.getLogger().log(Level.INFO, "MegaWither enabled!");
